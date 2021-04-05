@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/icon_videosharing.ico</file>
+    </qresource>
+    <qresource prefix="/icons/light">
+        <file>icons/light/icon_adds.png</file>
+        <file>icons/light/icon_close.png</file>
+        <file>icons/light/icon_delete.png</file>
+        <file>icons/light/icon_desc.png</file>
+        <file>icons/light/icon_forward10.png</file>
+        <file>icons/light/icon_fullscreen.png</file>
+        <file>icons/light/icon_inc.png</file>
+        <file>icons/light/icon_list.png</file>
+        <file>icons/light/icon_maxscreen.png</file>
+        <file>icons/light/icon_minscreen.png</file>
+        <file>icons/light/icon_mute.png</file>
+        <file>icons/light/icon_pause.png</file>
+        <file>icons/light/icon_play.png</file>
+        <file>icons/light/icon_refresh.png</file>
+        <file>icons/light/icon_resetscreen.png</file>
+        <file>icons/light/icon_rewind10.png</file>
+        <file>icons/light/icon_skipback.png</file>
+        <file>icons/light/icon_skipforward.png</file>
+        <file>icons/light/icon_stop.png</file>
+        <file>icons/light/icon_volume.png</file>
+    </qresource>
+</RCC>

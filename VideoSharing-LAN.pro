@@ -10,9 +10,11 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
+    qudvideowidget.cpp \
     qvslmainwindow.cpp
 
 HEADERS += \
+    qudvideowidget.h \
     qvslmainwindow.h
 
 FORMS += \
@@ -22,3 +24,13 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+    .gitignore \
+    LICENSE \
+    README.md
+
+RC_ICONS = icons/icon_videosharing.ico
+
+RESOURCES += \
+    icons.qrc
