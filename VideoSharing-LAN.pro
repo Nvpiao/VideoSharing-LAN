@@ -10,10 +10,12 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
+    qudfloatwidget.cpp \
     qudvideowidget.cpp \
     qvslmainwindow.cpp
 
 HEADERS += \
+    qudfloatwidget.h \
     qudvideowidget.h \
     qvslmainwindow.h
 

@@ -35,12 +35,13 @@ QVSLMainWindow::QVSLMainWindow(QWidget *parent)
     ui->listVideoWidget->setStyleSheet("background-color:rgb(60,60,60)");
     ui->playListWidget->setVisible(false);
 
+    ui->widgetTop->setMainWindow(this);
+    ui->widgetBottom->setMainWindow(this);
+
     player = new QMediaPlayer(this);
     player->setNotifyInterval(2000);
     player->setVideoOutput(ui->widgetVideo);
     ui->widgetVideo->setPlayer(player, this);
-
-    //    ui->widgetVideo->setAspectRatioMode(Qt::KeepAspectRatio);
 
     playlist = new QMediaPlaylist(this);
     playlist->setPlaybackMode(QMediaPlaylist::Loop);
@@ -99,6 +100,7 @@ void QVSLMainWindow::on_btnMax_clicked()
         ui->btnMax->setToolTip(tr("恢复尺寸"));
         this->showMaximized();
     }
+    this->setTopAndBottomWidgetVisiable(true);
 }
 
 void QVSLMainWindow::on_btnFullScreen_clicked()
@@ -127,8 +129,8 @@ void QVSLMainWindow::videoFullScreen() {
 }
 
 void QVSLMainWindow::setTopAndBottomWidgetVisiable(bool visiable) {
-    ui->widgetBottom->setVisible(visiable);
-    ui->widgetTop->setVisible(visiable);
+    ui->widgetBottom->setVisiblily(ui->widgetBottom, visiable);
+    ui->widgetTop->setVisiblily(ui->widgetTop, visiable);
 }
 
 void QVSLMainWindow::mousePress(QMouseEvent *event)
@@ -503,6 +505,7 @@ void QVSLMainWindow::on_btnForward10_clicked()
 
 void QVSLMainWindow::on_sliderVolumn_valueChanged(int value)
 {
+    player->setMuted(false);
     player->setVolume(value);
 
     if (value == 0) {
@@ -519,11 +522,15 @@ void QVSLMainWindow::on_sliderProgress_valueChanged(int value)
 
 void QVSLMainWindow::on_btnVolumn_clicked()
 {
+    if (player->volume() == 0) {
+        return;
+    }
+
     bool isMuted = player->isMuted();
 
     player->setMuted(!isMuted);
 
-    if (isMuted) {
+    if (!isMuted) {
         ui->btnVolumn->setIcon(QIcon(":/icons/light/icons/light/icon_mute.png"));
     } else {
         ui->btnVolumn->setIcon(QIcon(":/icons/light/icons/light/icon_volume.png"));
@@ -557,6 +564,7 @@ void QVSLMainWindow::on_btnOpen_clicked()
     item->setForeground(QColor("white"));
     item->setText(vFInfo.fileName());
     item->setToolTip(vFInfo.fileName());
+    item->setData(Qt::UserRole + 1, vFInfo.absoluteFilePath());
     ui->listVideoWidget->addItem(item);
     ui->listVideoWidget->setCurrentRow(ui->listVideoWidget->count() - 1);
 

@@ -472,6 +472,21 @@
     <bool>true</bool>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_4">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
     <item>
      <widget class="QSplitter" name="splitter">
       <property name="orientation">
@@ -921,8 +936,23 @@
         </palette>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_2">
+        <property name="spacing">
+         <number>7</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
         <item>
-         <widget class="QWidget" name="widgetTop" native="true">
+         <widget class="QUDFloatWidget" name="widgetTop" native="true">
           <property name="maximumSize">
            <size>
             <width>16777215</width>
@@ -1371,7 +1401,25 @@
             </disabled>
            </palette>
           </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
           <layout class="QHBoxLayout" name="horizontalLayout">
+           <property name="spacing">
+            <number>7</number>
+           </property>
+           <property name="leftMargin">
+            <number>11</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>11</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
            <item>
             <widget class="QLabel" name="labTitle">
              <property name="font">
@@ -1384,6 +1432,12 @@
              </property>
              <property name="text">
               <string>视享</string>
+             </property>
+             <property name="margin">
+              <number>0</number>
+             </property>
+             <property name="indent">
+              <number>5</number>
              </property>
             </widget>
            </item>
@@ -1533,16 +1587,37 @@
          </widget>
         </item>
         <item>
-         <widget class="QWidget" name="widgetBottom" native="true">
+         <widget class="QUDFloatWidget" name="widgetBottom" native="true">
           <property name="maximumSize">
            <size>
             <width>16777215</width>
             <height>90</height>
            </size>
           </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
           <layout class="QVBoxLayout" name="verticalLayout">
+           <property name="leftMargin">
+            <number>11</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>11</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
            <item>
             <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <property name="leftMargin">
+              <number>20</number>
+             </property>
+             <property name="rightMargin">
+              <number>20</number>
+             </property>
              <item>
               <widget class="QSlider" name="sliderProgress">
                <property name="sizePolicy">
@@ -1614,13 +1689,25 @@
            </item>
            <item>
             <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <property name="leftMargin">
+              <number>11</number>
+             </property>
+             <property name="rightMargin">
+              <number>11</number>
+             </property>
              <item>
               <widget class="QPushButton" name="btnPlay">
+               <property name="mouseTracking">
+                <bool>false</bool>
+               </property>
                <property name="focusPolicy">
                 <enum>Qt::NoFocus</enum>
                </property>
                <property name="toolTip">
                 <string>播放</string>
+               </property>
+               <property name="autoFillBackground">
+                <bool>false</bool>
                </property>
                <property name="text">
                 <string/>
@@ -1628,6 +1715,12 @@
                <property name="icon">
                 <iconset resource="icons.qrc">
                  <normaloff>:/icons/light/icons/light/icon_play.png</normaloff>:/icons/light/icons/light/icon_play.png</iconset>
+               </property>
+               <property name="checkable">
+                <bool>false</bool>
+               </property>
+               <property name="checked">
+                <bool>false</bool>
                </property>
                <property name="autoDefault">
                 <bool>false</bool>
@@ -2494,6 +2587,12 @@
    <class>QUDVideoWidget</class>
    <extends>QWidget</extends>
    <header location="global">qudvideowidget.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>QUDFloatWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">qudfloatwidget.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
