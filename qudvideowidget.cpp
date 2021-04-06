@@ -30,15 +30,7 @@ void QUDVideoWidget::mousePressEvent(QMouseEvent *event)
 void QUDVideoWidget::mouseReleaseEvent(QMouseEvent *event)
 {
     timer->stop();
-
-    if ((event->button() == Qt::LeftButton) && clickFlag) {
-        if (player->state() == QMediaPlayer::PlayingState) {
-            player->pause();
-        } else {
-            player->play();
-        }
-    }
-    mainWindow->mouseRelease(event);
+    mainWindow->mouseRelease(event, clickFlag);
     QVideoWidget::mouseReleaseEvent(event);
 }
 

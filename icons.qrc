@@ -23,5 +23,7 @@
         <file>icons/light/icon_skipforward.png</file>
         <file>icons/light/icon_stop.png</file>
         <file>icons/light/icon_volume.png</file>
+        <file>icons/light/icon_clear.png</file>
+        <file>icons/light/icon_open.png</file>
     </qresource>
 </RCC>

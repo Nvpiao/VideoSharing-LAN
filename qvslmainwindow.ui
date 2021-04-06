@@ -1396,6 +1396,9 @@
                <kerning>true</kerning>
               </font>
              </property>
+             <property name="toolTip">
+              <string/>
+             </property>
              <property name="text">
               <string/>
              </property>
@@ -1429,6 +1432,12 @@
            </item>
            <item>
             <widget class="QPushButton" name="btnMin">
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="toolTip">
+              <string>最小化</string>
+             </property>
              <property name="styleSheet">
               <string notr="true"/>
              </property>
@@ -1446,6 +1455,12 @@
            </item>
            <item>
             <widget class="QPushButton" name="btnMax">
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="toolTip">
+              <string>最大化</string>
+             </property>
              <property name="text">
               <string/>
              </property>
@@ -1460,6 +1475,12 @@
            </item>
            <item>
             <widget class="QPushButton" name="btnFullScreen">
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="toolTip">
+              <string>全屏</string>
+             </property>
              <property name="text">
               <string/>
              </property>
@@ -1474,6 +1495,12 @@
            </item>
            <item>
             <widget class="QPushButton" name="btnClose">
+             <property name="focusPolicy">
+              <enum>Qt::NoFocus</enum>
+             </property>
+             <property name="toolTip">
+              <string>关闭</string>
+             </property>
              <property name="text">
               <string/>
              </property>
@@ -1518,6 +1545,12 @@
             <layout class="QHBoxLayout" name="horizontalLayout_2">
              <item>
               <widget class="QSlider" name="sliderProgress">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
                <property name="maximumSize">
                 <size>
                  <width>16777215</width>
@@ -1525,7 +1558,13 @@
                 </size>
                </property>
                <property name="mouseTracking">
-                <bool>true</bool>
+                <bool>false</bool>
+               </property>
+               <property name="statusTip">
+                <string>时间轴</string>
+               </property>
+               <property name="tracking">
+                <bool>false</bool>
                </property>
                <property name="orientation">
                 <enum>Qt::Horizontal</enum>
@@ -1534,6 +1573,12 @@
              </item>
              <item>
               <widget class="QPushButton" name="btnVolumn">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="toolTip">
+                <string>音量</string>
+               </property>
                <property name="text">
                 <string/>
                </property>
@@ -1555,7 +1600,7 @@
                 </size>
                </property>
                <property name="maximum">
-                <number>100</number>
+                <number>150</number>
                </property>
                <property name="value">
                 <number>100</number>
@@ -1571,6 +1616,12 @@
             <layout class="QHBoxLayout" name="horizontalLayout_3">
              <item>
               <widget class="QPushButton" name="btnPlay">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="toolTip">
+                <string>播放</string>
+               </property>
                <property name="text">
                 <string/>
                </property>
@@ -1578,19 +1629,11 @@
                 <iconset resource="icons.qrc">
                  <normaloff>:/icons/light/icons/light/icon_play.png</normaloff>:/icons/light/icons/light/icon_play.png</iconset>
                </property>
-               <property name="flat">
-                <bool>true</bool>
+               <property name="autoDefault">
+                <bool>false</bool>
                </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="QPushButton" name="btnPause">
-               <property name="text">
-                <string/>
-               </property>
-               <property name="icon">
-                <iconset resource="icons.qrc">
-                 <normaloff>:/icons/light/icons/light/icon_pause.png</normaloff>:/icons/light/icons/light/icon_pause.png</iconset>
+               <property name="default">
+                <bool>false</bool>
                </property>
                <property name="flat">
                 <bool>true</bool>
@@ -1599,6 +1642,12 @@
              </item>
              <item>
               <widget class="QPushButton" name="btnStop">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="toolTip">
+                <string>停止播放</string>
+               </property>
                <property name="text">
                 <string/>
                </property>
@@ -1613,6 +1662,12 @@
              </item>
              <item>
               <widget class="QPushButton" name="btnSkipBack">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="toolTip">
+                <string>前一个视频</string>
+               </property>
                <property name="text">
                 <string/>
                </property>
@@ -1627,6 +1682,12 @@
              </item>
              <item>
               <widget class="QPushButton" name="btnRewind10">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="toolTip">
+                <string>快退10s</string>
+               </property>
                <property name="text">
                 <string/>
                </property>
@@ -1641,6 +1702,12 @@
              </item>
              <item>
               <widget class="QPushButton" name="btnForward10">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="toolTip">
+                <string>快进10s</string>
+               </property>
                <property name="text">
                 <string/>
                </property>
@@ -1655,6 +1722,12 @@
              </item>
              <item>
               <widget class="QPushButton" name="btnSkipForward">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="toolTip">
+                <string>下一个视频</string>
+               </property>
                <property name="text">
                 <string/>
                </property>
@@ -1668,7 +1741,30 @@
               </widget>
              </item>
              <item>
+              <widget class="QPushButton" name="btnOpen">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="toolTip">
+                <string>打开视频文件</string>
+               </property>
+               <property name="text">
+                <string/>
+               </property>
+               <property name="icon">
+                <iconset resource="icons.qrc">
+                 <normaloff>:/icons/light/icons/light/icon_open.png</normaloff>:/icons/light/icons/light/icon_open.png</iconset>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
               <widget class="QLabel" name="labDuration">
+               <property name="whatsThis">
+                <string>时间进度</string>
+               </property>
                <property name="text">
                 <string>00:00:00/00:00:00</string>
                </property>
@@ -1689,6 +1785,12 @@
              </item>
              <item>
               <widget class="QPushButton" name="btnList">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
+               <property name="toolTip">
+                <string>播放列表</string>
+               </property>
                <property name="text">
                 <string/>
                </property>
@@ -2193,6 +2295,9 @@
           <property name="sizeAdjustPolicy">
            <enum>QAbstractScrollArea::AdjustIgnored</enum>
           </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::ExtendedSelection</enum>
+          </property>
           <property name="movement">
            <enum>QListView::Static</enum>
           </property>
@@ -2220,6 +2325,12 @@
               <height>16777215</height>
              </size>
             </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="toolTip">
+             <string>添加播放文件</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -2239,6 +2350,12 @@
               <width>40</width>
               <height>16777215</height>
              </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="toolTip">
+             <string>移除视频文件</string>
             </property>
             <property name="text">
              <string/>
@@ -2260,6 +2377,12 @@
               <height>16777215</height>
              </size>
             </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="toolTip">
+             <string>列表升序排序</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -2280,6 +2403,12 @@
               <height>16777215</height>
              </size>
             </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="toolTip">
+             <string>列表降序排序</string>
+            </property>
             <property name="text">
              <string/>
             </property>
@@ -2293,12 +2422,18 @@
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton">
+           <widget class="QPushButton" name="btnRefresh">
             <property name="maximumSize">
              <size>
               <width>40</width>
               <height>16777215</height>
              </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="toolTip">
+             <string>刷新列表</string>
             </property>
             <property name="text">
              <string/>
@@ -2306,6 +2441,26 @@
             <property name="icon">
              <iconset resource="icons.qrc">
               <normaloff>:/icons/light/icons/light/icon_refresh.png</normaloff>:/icons/light/icons/light/icon_refresh.png</iconset>
+            </property>
+            <property name="flat">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnClear">
+            <property name="focusPolicy">
+             <enum>Qt::NoFocus</enum>
+            </property>
+            <property name="toolTip">
+             <string>清空列表</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset resource="icons.qrc">
+              <normaloff>:/icons/light/icons/light/icon_clear.png</normaloff>:/icons/light/icons/light/icon_clear.png</iconset>
             </property>
             <property name="flat">
              <bool>true</bool>
