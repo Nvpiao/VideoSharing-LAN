@@ -17,32 +17,32 @@
     </a>
 </center>
 
-## :large_blue_circle: 国际化
+## :large_blue_circle: Internationalization
 
-[English](README.md) | 中文文档
+English | [中文文档](README_zh.md)
 
-## :information_source:  项目介绍
+## :information_source: Introductions
 
-该分支为视频播放器，同时也是VideoSharing-LAN项目的最主要部分。 由[QT 5.12.10](https://github.com/qt/qt5/tree/5.12.10)编写而成。 由于QT本身的限制，播放器无法提供解码功能。所以，您需要在播放任何视频文件前确认是否安装了[LAVFilters](https://github.com/Nevcairiel/LAVFilters) 或 [K-lite](http://www.codecguide.com/download_kl.htm)。现在，该播放器仅支持WIN环境。
+It is a video player as well as the main part of the VideoSharing-LAN project. It is created by [QT 5.12.10](https://github.com/qt/qt5/tree/5.12.10). Due to the limitation of QT, the player can not provide a decoding service. Therefore, [LAVFilters](https://github.com/Nevcairiel/LAVFilters) or [K-lite](http://www.codecguide.com/download_kl.htm) should be installed before you play any vides. Now, the player only supports the Win environment.
 
-## :eight_spoked_asterisk: 项目特性
+## :eight_spoked_asterisk: Features
 
-待完善。。。
+To be perfected...
 
-## :gem: 使用方法
+## :gem: Installation
 
-### 安装
+### Setup
 ```
-安装包将很快被提供。
+The installation package will be provided soon.
 ```
-### 运行
+### Run
 
-双击 **VideoSharing-Player.exe** 可执行程序。
+Double click **VideoSharing-Player.exe**
 
-## :stuck_out_tongue_winking_eye: 关于作者
+## :stuck_out_tongue_winking_eye: Authors
 
 [Nvpiao](https://github.com/Nvpiao)
 
-## :copyright: 版权信息
+## :copyright: License
 
 [License MIT](LICENSE)

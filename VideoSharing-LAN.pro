@@ -8,6 +8,8 @@ CONFIG += c++11
 # In order to do so, uncomment the following line.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
+TARGET = VideoSharing-Player
+
 SOURCES += \
     main.cpp \
     qudfloatwidget.cpp \
@@ -30,7 +32,8 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 DISTFILES += \
     .gitignore \
     LICENSE \
-    README.md
+    README.md \
+    README_zh.md
 
 RC_ICONS = icons/icon_videosharing.ico
 
