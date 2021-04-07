@@ -8,7 +8,7 @@ CONFIG += c++11
 # In order to do so, uncomment the following line.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
-TARGET = VideoSharing-Player
+TARGET = VideoSharing-LAN
 
 SOURCES += \
     main.cpp \
@@ -30,10 +30,18 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES += \
+    .github/workflows/android.yml \
+    .github/workflows/ios.yml \
+    .github/workflows/macos.yml \
+    .github/workflows/ubuntu.yml \
+    .github/workflows/windows-mingw.yml \
+    .github/workflows/windows.yml \
     .gitignore \
     LICENSE \
     README.md \
-    README_zh.md
+    README_zh.md \
+    scripts/windows-mingw-publish.ps1 \
+    scripts/windows-publish.ps1
 
 RC_ICONS = icons/icon_videosharing.ico
 
