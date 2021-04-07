@@ -88,7 +88,8 @@ jobs:
         id: tree
         shell: cmd
         run: |
-          call "tree /F"
+          call "echo %PATH%"
+          call "tree /F D:\a\VideoSharing-LAN\VideoSharing-LAN\"
       # 打包 
       - name: package
         id: package      
