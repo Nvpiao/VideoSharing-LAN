@@ -47,3 +47,5 @@ RC_ICONS = icons/icon_videosharing.ico
 
 RESOURCES += \
     icons.qrc
+
+DESTDIR = $$absolute_path($${_PRO_FILE_PWD_}/bin/release)

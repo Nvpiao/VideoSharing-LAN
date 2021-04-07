@@ -84,13 +84,6 @@ jobs:
           echo winSdkVer=%WindowsSdkVersion% >> %GITHUB_ENV%
           echo vcToolsInstallDir=%VCToolsInstallDir% >> %GITHUB_ENV%
           echo vcToolsRedistDir=%VCToolsRedistDir% >> %GITHUB_ENV%
-      - name: tree
-        id: tree
-        shell: cmd
-        run: |
-          call "dir D:/a/VideoSharing-LAN/"
-          call "dir D:\a\VideoSharing-LAN\VideoSharing-LAN\bin"
-          call "dir D:\a\VideoSharing-LAN\VideoSharing-LAN\release"
       # 打包 
       - name: package
         id: package      
